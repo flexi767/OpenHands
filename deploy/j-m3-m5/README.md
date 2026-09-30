@@ -16,7 +16,9 @@ M5 Satellite registered; choose one in the backend switcher. On a new browser,
 add J at `http://127.0.0.1:48180`, M3 at `http://127.0.0.1:48184`, and M5 at
 `http://127.0.0.1:48185`. Obtain each key privately from that host's
 `~/openhands/service.env`; do not paste it into chat, source control, or logs.
-Keep the client tunnel running. Satellite backends are independent execution
+The current client also has `~/Library/LaunchAgents/dev.openhands.client-tunnel.plist`
+keeping `~/openhands/connect.sh` alive across disconnects and GUI logins. Keep
+the client tunnel running. Satellite backends are independent execution
 hosts; this does not automatically distribute one conversation across hosts.
 
 ## Layout and services
